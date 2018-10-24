@@ -56,7 +56,7 @@ public class Editor extends JFrame implements ActionListener {
         		String text = t.getText();
         		String target = finder.get_find_text();
         		int curr_position = t.getCaretPosition();
-        		int next_pos = finder.find(text , target , curr_position);
+        		int next_pos = finder.find(text , target , curr_position+1);
 				t.setCaretPosition(next_pos);
         	}
 		});
